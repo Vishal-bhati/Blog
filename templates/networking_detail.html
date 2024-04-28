@@ -18,11 +18,11 @@
     background-color: #3f4156;
   }
 </style>
-<div class="outer-container">
-  <div class="inner-container">
+<div class="outer-container" >
+  <div class="inner-container" >
     <div class="row">
-      <div class="col-md-8 card mb-4 mt-3 left top">
-        <div class="card-body">
+      <div class="col-md-8 card mb-4 mt-3 left top" style="background-color: #2d2d39; border-style: solid;">
+        <div class="card-body" style="background-color: #2d2d39;">
           <a href="javascript:history.go(-1);"> <span style="font-size: 40px;">&#11176;</span> </a>
           <h1>{% block title %}{{ object.title }}{% endblock title %}</h1>
           <p class="text-muted">{{ networking.author }} | {{ networking.created_on }}</p>
