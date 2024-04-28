@@ -9,7 +9,7 @@
     <style>
         /* Custom styles for the contact form */
         body {
-            background-color: #f8f9fa; /* Light gray background */
+            background-color: #3f4156; /* Light gray background */
         }
 
         .card {
@@ -17,18 +17,21 @@
             margin-bottom: 50px; /* Reduce margin */
             border-radius: 30px !important; /* Add rounded corners */
             overflow: hidden; /* Hide overflow */
+            background-color: #3f4156;
+            margin-top:40px;
+            color:white;
         }
 
         .card-header {
-            background-color: #007bff !important; /* Blue header background */
+            background-color: #3f4156 !important; /* Blue header background */
             color: #fff; /* White text color */
             text-align: center; /* Center align the text */
             padding: 20px 0; /* Add padding */
         }
 
         .btn-primary {
-            background-color: #007bff; /* Blue submit button */
-            border-color: #007bff; /* Blue border for button */
+            background-color: #3f4156; /* Blue submit button */
+            border-color: #3f4156; /* Blue border for button */
             width: 100%; /* Make button full width */
         }
 
@@ -39,11 +42,13 @@
 
         .card-body {
             padding: 20px; /* Add padding */
+            background-color: #3f4156;
         }
 
         input[type="text"],
         input[type="email"],
         textarea {
+            background-color:#3f4156;
             width: 100%; /* Make input fields full width */
             padding: 10px; /* Add padding */
             margin-bottom: 15px; /* Add margin */
@@ -71,7 +76,7 @@
                         <form method="post">
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" style="background-color: #3f4156;">Submit</button>
                         </form>
                     </div>
                 </div>

@@ -11,7 +11,6 @@ urlpatterns = [
     path('networking/', views.NetworkingList.as_view(), name='networking'),
     path('privacy/', views.Privacy.as_view(), name='privacy'),
     path('about/', views.About.as_view(), name='about'),
-    path('support/', views.Support.as_view(), name='support'),
     path('contact/', contact_view, name='contact'),
     path('contact/success/', contact_success_view, name='contact_success'),
     path('create_post/', views.create_post, name='create_post'),

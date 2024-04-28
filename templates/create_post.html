@@ -5,23 +5,26 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #2d2d39;
             margin: 90px !important;
         }
         h1 {
             text-align: center;
             margin-top: 50px;
+            
         }
         form {
+            color:white;
             width: 90%;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: #3f4156;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         form input[type="text"],
         form textarea {
+            background-color: #3f4156;
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -33,21 +36,21 @@
             display: block;
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #71c6dd;
+            color : #3f4156 ;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         form button:hover {
-            background-color: #0056b3;
+            opacity:80%;
         }
     </style>
 </head>
 <body>
     {% extends "base.html" %}
     {% block content %}
-    <h1>Create New Post</h1>
+    <h1 style="color:white;">Create New Post</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}

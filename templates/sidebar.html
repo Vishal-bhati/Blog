@@ -6,13 +6,15 @@
         border-radius: 10px;
         margin-bottom: 20px;
         margin-top: 50px;
+        background-color: #3f4156;
     }
 
     .card-header {
-        background-color: #f8f9fa;
+        background-color: #3f4156;
         border-bottom: 1px solid #dee2e6;
         font-weight: bold;
-        color: #333;
+        color: #fff;
+
     }
 
     .card-body {
@@ -21,7 +23,7 @@
 
     .card-text {
         font-size: 16px;
-        color: #555;
+        color: #fff;
     }
 
     .btn {
@@ -55,12 +57,12 @@
             <a href="{% url 'privacy' %}" class="btn btn-primary">Know more!</a>
         </div>
     </div>
-    <div class="card">
+    {% comment %} <div class="card">
         <h5 class="card-header">Visitors</h5>
         <div class="card-body">
             <p class="card-text">Number of visitors: {{ visit_counter.count }}</p>
         </div>
-    </div>
+    </div> {% endcomment %}
 </div>
 
 {% endblock sidebar %}
